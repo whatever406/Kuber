@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: prod-deploy
+  name: prod-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: prod-deploy
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: prod-deploy
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
