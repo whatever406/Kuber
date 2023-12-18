@@ -16,5 +16,5 @@ spec:
         app: prod-deploy
     spec:
       containers:
-      - image: httpd
+      - image: nginx
         name: nginx
