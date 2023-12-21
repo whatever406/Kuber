@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: prod-deploy
+    app: pet-deploy
   name: prod-svc
   namespace: myapp
 spec:
@@ -11,5 +11,5 @@ spec:
     protocol: TCP
     targetPort: 80
   selector:
-    app: prod-deploy
+    app: pet-deploy
   type: NodePort
