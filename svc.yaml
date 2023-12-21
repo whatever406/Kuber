@@ -4,7 +4,7 @@ metadata:
   labels:
     app: pet-deploy
   name: prod-svc
-  namespace: myapp
+  #namespace: pet
 spec:
   ports:
   - port: 80
