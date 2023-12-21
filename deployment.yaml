@@ -2,19 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: prod-deploy
-  name: prod-deploy
+    app: pet-deploy
+  name: pet-deploy
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: prod-deploy
+      app: pet-deploy
   template:
     metadata:
-      creationTimestamp: null
       labels:
-        app: prod-deploy
+        app: pet-deploy
     spec:
       containers:
-      - image: nginx
-        name: nginx
+      - image: cloudsihmar/new-pet:tag
+        name: pet
