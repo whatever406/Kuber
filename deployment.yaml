@@ -15,5 +15,5 @@ spec:
         app: pet-deploy
     spec:
       containers:
-      - image: cloudsihmar/new-pet:15
+      - image: cloudsihmar/new-pet:16
         name: pet
