@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: pet-deploy
-  name: pet-deploy
+    app: whatever-deploy
+  name: whatever-deploy
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: pet-deploy
+      app: whatever-deploy
   template:
     metadata:
       labels:
-        app: pet-deploy
+        app: whatever-deploy
     spec:
       containers:
-      - image: cloudsihmar/newpet:13
+      - image: whatever406/cow:latest
         name: pet
